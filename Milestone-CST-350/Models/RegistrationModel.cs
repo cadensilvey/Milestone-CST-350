@@ -26,10 +26,10 @@ namespace Milestone_CST_350.Models
         [DisplayName("Please Enter Valid Email Address")]
         public string Email { get; set; }
         [Required]
-        [DisplayName("Please Enter a Username")]
+        [DisplayName("Username")]
         public string Username { get; set; }
         [Required]
-        [DisplayName("Please Enter a Password")]
+        [DisplayName("Password")]
         public string Password { get; set; }
 
         public RegistrationModel()
