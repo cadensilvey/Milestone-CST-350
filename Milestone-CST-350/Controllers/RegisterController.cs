@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Milestone_CST_350.Models;
+using Milestone_CST_350.Services;
+using System.Security.Permissions;
 
 namespace Milestone_CST_350.Controllers
 {
@@ -10,9 +12,18 @@ namespace Milestone_CST_350.Controllers
             return View();
         }
 
-        public IActionResult processRegister (RegistrationModel model)
+        public IActionResult processRegister(RegistrationModel model)
         {
-            return View("registerSuccess");
+
+            SecurityService security = new SecurityService();
+
+            if (security.addUser(model))
+            {
+                return View("registerSuccess", model);
+
+            }
+            else
+                return View("Index");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Milestone_CST_350.Models;
+using Milestone_CST_350.Services;
 
 namespace Milestone_CST_350.Controllers
 {
@@ -12,14 +13,14 @@ namespace Milestone_CST_350.Controllers
 
         public IActionResult processLogin(RegistrationModel user)
         {
-            if (user.Username == "root" && user.Password == "root")
+            SecurityService security = new SecurityService();
+
+            if(security.isValid(user))
             {
-                return View("loginSuccess");
+                return View("loginSuccess", user);
             }
             else
-            {
-                return View("loginFail");
-            }
+                return View("loginFail", user);
         }
     }
 }
