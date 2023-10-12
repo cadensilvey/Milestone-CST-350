@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Home/play.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwbGF5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +34,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Login/loginSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cbG9naW5TdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Minesweeper/GameOver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluZXN3ZWVwZXJcR2FtZU92ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Minesweeper/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluZXN3ZWVwZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Minesweeper/_GameBoardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluZXN3ZWVwZXJcX0dhbWVCb2FyZFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/caden/OneDrive/Fall 2023/C\# III/Milestone/Milestone-CST-350/Milestone-CST-350/Views/Register/Index.cshtml]

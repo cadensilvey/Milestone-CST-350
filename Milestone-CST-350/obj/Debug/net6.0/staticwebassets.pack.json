@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Milestone-CST-350.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\css\\minesweeper.css",
+      "PackagePath": "staticwebassets\\css\\minesweeper.css"
+    },
+    {
       "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

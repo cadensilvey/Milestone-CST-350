@@ -1,0 +1,50 @@
+﻿.minesweeper-board {
+    width: 500px; /* Set the width to your desired value */
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    width: 50px; /* Set the cell width */
+    height: 50px; /* Set the cell height */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc; /* Cell border style */
+    background-color: #eee; /* Cell background color */
+    font-weight: bold; /* Cell text style */
+    font-size: 16px; /* Cell text size */
+}
+
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* Adjust column width as needed */
+    gap: 5px; /* Adjust gap as needed */
+    border: 1px solid #000; /* Optional border styling */
+    padding: 5px; /* Optional padding */
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000; /* Optional cell border styling */
+}
+
+.cell-button {
+    background: #ccc; /* Button background color */
+    width: 100%; /* Button width to fill cell */
+    height: 100%; /* Button height to fill cell */
+}
+
+

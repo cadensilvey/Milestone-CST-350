@@ -1,0 +1,27 @@
+﻿@model Milestone_CST_350.Models.MinesweeperGame
+@{
+    ViewBag.Title = "Welcome to the Minesweeper Game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="minesweeper-board">
+    <table>
+        <tbody>
+            @for (int row = 0; row < Model.NumRows; row++)
+            {
+                <tr>
+                    @for (int col = 0; col < Model.NumCols; col++)
+                    {
+                        <td>
+                            <form method="post" asp-action="ToggleFlag" asp-route-row="row" asp-route-col="col">
+                                <input type="submit" value="SetFlag" class="cell-button flag-link" />
+                            </form>
+                            <form method="post" asp-action="RevealCell" asp-route-row="row" asp-route-col="col">
+                                <input type="submit" value="@Model.GetCellDisplay(row, col)" class="cell-button cell-link" />
+                            </form>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

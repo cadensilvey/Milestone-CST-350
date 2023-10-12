@@ -1,0 +1,66 @@
+﻿@model Milestone_CST_350.Models.MinesweeperGame
+
+@{
+    ViewBag.Title = "Welcome to the Minesweeper Game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/minesweeper.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    
+    <h1>Welcome to Minesweeper</h1>
+    <div class="minesweeper-board">
+        <table>
+            <tbody>
+                @for (int row = 0; row < Model.NumRows; row++)
+                {
+                    <tr>
+                        @for (int col = 0; col < Model.NumCols; col++)
+                        {
+                            <td>
+                                <form method="post" asp-action="ToggleFlag" asp-route-row="row" asp-route-col="col">
+                                    <input method="post "type="submit" class="cell-button" />
+                                </form>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+</html>
+
+<script >
+    $(function () {
+        $(".cell-button").on("mousedown", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            var form = $(this).closest("form");
+            var action = "RevealCell"; // Default action for left-click
+            if (e.which === 3) {
+                // Right mouse click, perform ToggleFlag action
+                action = "ToggleFlag";
+            }
+
+            // Submit the form using POST and update the table
+            $.post(form.attr("action"), form.serialize() + "&action=" + action, function (data) {
+                $("#minesweeper-board").html(data);
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
