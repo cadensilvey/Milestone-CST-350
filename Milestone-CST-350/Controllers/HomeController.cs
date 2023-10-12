@@ -18,7 +18,7 @@ namespace Milestone_CST_350.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult play()
         {
             return View();
         }
