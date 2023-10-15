@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Milestone_CST_350.Models.MinesweeperModel>
+
+<style>
+    .game-button{
+        width: 75px;
+    }
+    .game-button-image{
+        width: 70px;
+    }
+    .button-zone{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .line-break{
+        flex-basis: 100%;
+        height:0;
+    }
+    .button-label{
+        font-size: 8px;
+        text-align: center;
+    }
+</style>
+
+@{
+    // store the image names in an array for more efficent code
+    string[] imageNames = { "Flag.png", "Bomb.png", "cell.png" };
+}
+
+<form>
+    <div class="button-zone">
+        @for (int i = 0; i < Model.Count(); i++)
+        {
+            // Start a new line every 5 elements
+            if (i % 5 == 0)
+            {
+                <div class="line-break"></div>
+            }
+            <button class="game-button" type="submit" value="@Model.ElementAt(i).Id" name="buttonNumber" asp-controller="Minesweeper" asp-action="ToggleFlag">
+                <img class="game-button-image" src="~/img/@(Model.ElementAt(i).IsBomb ? "Bomb.png" : "cell.png")" />
+                <div class="game-button">
+                    @Model.ElementAt(i).Id, @Model.ElementAt(i).ButtonState
+                </div>
+            </button>
+        }
+    </div>
+</form>
+
+
+
+

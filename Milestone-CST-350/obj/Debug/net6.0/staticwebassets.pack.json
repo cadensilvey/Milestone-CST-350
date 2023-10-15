@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\img\\Bomb.jpg",
+      "PackagePath": "staticwebassets\\img\\Bomb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\img\\Bomb.png",
+      "PackagePath": "staticwebassets\\img\\Bomb.png"
+    },
+    {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\img\\Flag.jpg",
+      "PackagePath": "staticwebassets\\img\\Flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\img\\Flag.png",
+      "PackagePath": "staticwebassets\\img\\Flag.png"
+    },
+    {
+      "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\img\\cell.png",
+      "PackagePath": "staticwebassets\\img\\cell.png"
+    },
+    {
       "Id": "C:\\Users\\caden\\OneDrive\\Fall 2023\\C# III\\Milestone\\Milestone-CST-350\\Milestone-CST-350\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
